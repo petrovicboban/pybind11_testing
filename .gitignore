@@ -7,3 +7,6 @@ _generate/
 *.egg-info
 *env*
 **/*.egg-info
+**/.mypy_cache
+**/.pytest_cache
+**/__pycache__

@@ -7,6 +7,23 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "cmake_example"
+version = "0.0.1"
+description = "A test project using pybind11 and CMake"
+authors = [{name = "Boban Petrovic", email = "petrovicboban.g@gmail.com"}]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+  "pytest-cov[all]"
+]
+
+[tool.setuptools]
+packages = ["cmake_example"]
+zip-safe = false
+
 [tool.isort]
 profile = "black"
 
